@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Login Page</title>
+    <title>Register Page</title>
     <style>
         body {
-            background: #4b5460;
+            background: #f0f2f5;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -15,8 +15,8 @@
             font-family: Arial, sans-serif;
         }
 
-        .login-container {
-            background: white;
+        .register-container {
+            background: rgb(255, 0, 0);
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -24,24 +24,24 @@
             text-align: center;
         }
 
-        .login-container h2 {
+        .register-container h2 {
             margin-bottom: 20px;
             color: #333;
         }
 
-        .login-container input {
+        .register-container input {
             width: 100%;
             padding: 10px;
             margin: 8px 0;
-            border: 1px solid #c2bbbb;
+            border: 1px solid #ccc;
             border-radius: 8px;
             box-sizing: border-box;
         }
 
-        .login-container button {
+        .register-container button {
             width: 100%;
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: #007BFF;
             border: none;
             border-radius: 8px;
             color: white;
@@ -49,11 +49,11 @@
             cursor: pointer;
         }
 
-        .login-container button:hover {
-            background-color: #113a13;
+        .register-container button:hover {
+            background-color: #0069d9;
         }
 
-        .login-container p {
+        .register-container p {
             font-size: 14px;
             color: #666;
             margin-top: 16px;
@@ -62,14 +62,16 @@
 </head>
 <body>
 
-<div class="login-container">
-    <h2>Login</h2>
+<div class="register-container">
+    <h2>Create Account</h2>
     <form>
         <input type="text" placeholder="Username" required>
+        <input type="email" placeholder="Email" required>
         <input type="password" placeholder="Password" required>
-        <button type="submit">Log In</button>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit">Register</button>
     </form>
-    <p>Don't have an account? <a href="#">Sign up</a></p>
+    <p>Already have an account? <a href="#">Log in</a></p>
 </div>
 
 </body>
